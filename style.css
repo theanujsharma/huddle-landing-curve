@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00252e;
+  border-radius: 100vw;
+  border: 2px solid white;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005266;
+}
+
 h1, h2 {
   font-family: "Poppins", sans-serif;
 }
@@ -17,6 +39,7 @@ body {
           align-items: center;
   color: #00252e;
   font-size: 20px;
+  overflow: overlay;
 }
 
 body .top {
@@ -46,7 +69,8 @@ body .top button:hover {
 }
 
 body .container {
-  margin-top: 10rem;
+  width: 100%;
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,9 +160,8 @@ body .container .grow-together, body .container .flowing-conversations, body .co
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0px 100px 0px 100px;
   background-color: #f5faff;
 }
@@ -195,7 +218,7 @@ body footer {
   color: white;
   width: 100%;
   background-color: #00252e;
-  padding: 5%;
+  padding: 5% 5% 0% 5%;
 }
 
 body footer .bot-container {
@@ -304,7 +327,6 @@ body footer .bot-container .right .error small {
 }
 
 body footer .social {
-  padding-left: 5%;
   margin-top: 60px;
   margin-bottom: 100px;
 }

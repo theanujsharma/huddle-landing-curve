@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
+
     <script
       src="https://kit.fontawesome.com/5d9538e229.js"
       crossorigin="anonymous"
@@ -24,7 +24,7 @@
   <body>
     <div class="top">
       <a href="#"> <img src="./images/logo.svg" alt="" class="logo" /></a>
-      <button>Try It Free</button>
+      <button id="freetry">Try It Free</button>
     </div>
 
     <div class="container">
@@ -150,12 +150,13 @@
     <footer>
       <div class="bot-container">
         <div class="left">
-          <img
-            src="./images/logowhite.svg"
-            alt=""
-            aria-hidden="true"
-            class="logowhite"
-          />
+          <a href="#"
+            ><img
+              src="./images/logowhite.svg"
+              alt=""
+              aria-hidden="true"
+              class="logowhite"
+          /></a>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
@@ -182,6 +183,35 @@
               />example@huddle.com
             </p>
           </div>
+
+          <div class="social">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="facebook"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  aria-label="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  aria-label="twitter"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="right">
@@ -190,7 +220,7 @@
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address.
           </p>
-          <form action="" class="" id="form">
+          <form action="" id="form" class="">
             <input
               type="text"
               placeholder="your email adress..."
@@ -203,31 +233,6 @@
           </form>
         </div>
       </div>
-      <div class="social">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              aria-label="facebook"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              aria-label="instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" target="_blank" aria-label="twitter"
-              ><i class="fab fa-twitter-square"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
 
       <p class="attribution">
         Challenge by
@@ -239,5 +244,6 @@
         >.
       </p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
